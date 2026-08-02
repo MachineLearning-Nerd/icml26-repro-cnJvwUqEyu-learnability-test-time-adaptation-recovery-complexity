@@ -1,16 +1,45 @@
 {
   "schema_version": 1,
   "openreview_id": "cnJvwUqEyu",
-  "phase": "claim_1_protocol_pending_direct_local_recovery_experiment",
-  "next_action": "launch_claim_1_direct_local_recovery_complexity_fixture",
+  "phase": "claim_1_attempt_1_direct_local_fixture_complete_toy",
+  "next_action": "independent_review_claim_1_toy_against_literal_definition_then_claim_2_source_audit",
   "active_run_ids": [],
-  "completed_milestones": ["live_duplicate_gate", "live_contract_saved", "source_archive_and_pdf_pinned", "claim_1_source_cpu_feasibility_audit"],
-  "failed_attempts": [{"phase": "initial_test_environment", "outcome": "recoverable", "reason": "system Python lacked pytest; local project venv installed pytest and contract tests passed"}],
-  "claim_attempt_counts": {"1": 0, "2": 0, "3": 0, "4": 0, "5": 0},
-  "last_checkpoint": "2026-08-02T12:30:41Z",
+  "completed_milestones": [
+    "live_duplicate_gate",
+    "live_contract_saved",
+    "source_archive_and_pdf_pinned",
+    "claim_1_source_cpu_feasibility_audit",
+    "claim_1_attempt_1_source_faithful_1d_recovery_fixture"
+  ],
+  "failed_attempts": [
+    {
+      "phase": "initial_test_environment",
+      "outcome": "recoverable",
+      "reason": "system Python lacked pytest; local project venv installed pytest and contract tests passed"
+    }
+  ],
+  "claim_attempt_counts": {
+    "1": 1,
+    "2": 0,
+    "3": 0,
+    "4": 0,
+    "5": 0
+  },
+  "last_checkpoint": "2026-08-02T14:34:13Z",
   "last_known_git_commit": "3ca16f46fc1fc1aa9d20030ab089efaaf542edb4",
   "publication_allowed": false,
   "compute_policy": "local CPU/local GPU only; no HF cpu-upgrade, Jobs, paid, or remote compute",
   "github_repository": "https://github.com/MachineLearning-Nerd/icml26-repro-cnJvwUqEyu-learnability-test-time-adaptation-recovery-complexity",
-  "selection_rationale": "Anchored five-claim contract, public source archive/PDF, explicit controlled one-dimensional synthetic recovery experiment, and theorem-scaling claims support a clean-room local CPU first milestone. CIFAR/ImageNet and model-dependent claims are not presumed locally reproducible."
+  "selection_rationale": "Anchored five-claim contract, public source archive/PDF, explicit controlled one-dimensional synthetic recovery experiment, and theorem-scaling claims support a clean-room local CPU first milestone. CIFAR/ImageNet and model-dependent claims are not presumed locally reproducible.",
+  "claim_1_outcome": {
+    "verdict": "toy",
+    "scope": "Finite local CPU one-dimensional Appendix fixture operationalizes the recovery-complexity metric with an aligned/noisy proxy and negative-alignment control. It does not verify the general Claim-1 definition or global TTA learnability.",
+    "evidence": [
+      "outputs/claim1_attempt1/config.json",
+      "outputs/claim1_attempt1/results.csv",
+      "outputs/claim1_attempt1/summary.json",
+      "outputs/claim1_attempt1/SHA256SUMS",
+      "evidence/claim1_attempt1/source_locations.md"
+    ]
+  }
 }

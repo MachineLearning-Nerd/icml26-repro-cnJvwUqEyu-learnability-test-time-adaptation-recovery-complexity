@@ -1,0 +1,10 @@
+label,alpha,batch_size,control,eta,mean_first_crossing,definition_tau_finite_mc,failure_rate_at_horizon,max_tail_failure_at_tau,runs,horizon,seed
+alpha_sweep,0.05,16,False,0.05,274.33,579,0.0,0.1,100,1000,20260802
+alpha_sweep,0.1,16,False,0.1,76.23,164,0.01,0.1,100,1000,20260803
+alpha_sweep,0.2,16,False,0.2,19.36,42,0.01,0.09,100,1000,20260804
+alpha_sweep,0.5,16,False,0.5,4.21,7,0.02,0.06,100,1000,20260805
+batch_sweep,0.2,1,False,0.0125,288.25,512,0.04,0.1,100,1000,20260806
+batch_sweep,0.2,4,False,0.05,74.01,144,0.01,0.09,100,1000,20260807
+batch_sweep,0.2,16,False,0.2,21.2,40,0.0,0.08,100,1000,20260808
+batch_sweep,0.2,64,False,0.8,5.94,10,0.01,0.1,100,1000,20260809
+negative_alignment_control,0.2,16,True,0.2,1001.0,1001,1.0,,100,1000,20260810

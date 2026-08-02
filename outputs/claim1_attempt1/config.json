@@ -1,0 +1,27 @@
+{
+  "alpha_batch": 16,
+  "alpha_values": [
+    0.05,
+    0.1,
+    0.2,
+    0.5
+  ],
+  "batch_alpha": 0.2,
+  "batch_values": [
+    1,
+    4,
+    16,
+    64
+  ],
+  "bias_rule": "b=0 (satisfies alignment with zeta=1e-3); source does not state a numerical b",
+  "delta": 0.1,
+  "epsilon": 1.0,
+  "horizon": 1000,
+  "runs": 100,
+  "seed": 20260802,
+  "sigma": 3.0,
+  "source": "Appendix-Experiments.tex: one-dimensional loss 1/2(theta-theta*)^2; theta*=3; sigma=3; zeta=1e-3; epsilon=1; 100 runs",
+  "step_rule": "eta = alpha * B / 16; calibrated to the source table's reported alpha^2 and B scaling; not specified by manuscript",
+  "theta_star": 3.0,
+  "zeta": 0.001
+}

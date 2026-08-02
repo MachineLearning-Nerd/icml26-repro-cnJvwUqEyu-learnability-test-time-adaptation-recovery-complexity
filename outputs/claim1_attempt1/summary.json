@@ -1,0 +1,176 @@
+{
+  "alpha_tau_alpha2": [
+    {
+      "alpha": 0.05,
+      "value": 0.6858250000000001
+    },
+    {
+      "alpha": 0.1,
+      "value": 0.7623000000000002
+    },
+    {
+      "alpha": 0.2,
+      "value": 0.7744000000000001
+    },
+    {
+      "alpha": 0.5,
+      "value": 1.0525
+    }
+  ],
+  "batch_tau_B": [
+    {
+      "batch": 1,
+      "value": 288.25
+    },
+    {
+      "batch": 4,
+      "value": 296.04
+    },
+    {
+      "batch": 16,
+      "value": 339.2
+    },
+    {
+      "batch": 64,
+      "value": 380.16
+    }
+  ],
+  "limitations": [
+    "finite 100-run Monte Carlo and horizon=1000 do not establish supremum over infinite time",
+    "step size and bias numerical value were not fully specified by source",
+    "no real-world Tent benchmarks"
+  ],
+  "method": "clean-room local CPU Monte Carlo; exact Appendix task/proxy/noise parameters; finite-horizon Definition-2.1 proxy",
+  "primary_metric": "definition_tau_finite_mc (uniform sampled marginal failure probability <= delta through horizon)",
+  "rows": [
+    {
+      "alpha": 0.05,
+      "batch_size": 16,
+      "control": false,
+      "definition_tau_finite_mc": 579,
+      "eta": 0.05,
+      "failure_rate_at_horizon": 0.0,
+      "horizon": 1000,
+      "label": "alpha_sweep",
+      "max_tail_failure_at_tau": 0.1,
+      "mean_first_crossing": 274.33,
+      "runs": 100,
+      "seed": 20260802
+    },
+    {
+      "alpha": 0.1,
+      "batch_size": 16,
+      "control": false,
+      "definition_tau_finite_mc": 164,
+      "eta": 0.1,
+      "failure_rate_at_horizon": 0.01,
+      "horizon": 1000,
+      "label": "alpha_sweep",
+      "max_tail_failure_at_tau": 0.1,
+      "mean_first_crossing": 76.23,
+      "runs": 100,
+      "seed": 20260803
+    },
+    {
+      "alpha": 0.2,
+      "batch_size": 16,
+      "control": false,
+      "definition_tau_finite_mc": 42,
+      "eta": 0.2,
+      "failure_rate_at_horizon": 0.01,
+      "horizon": 1000,
+      "label": "alpha_sweep",
+      "max_tail_failure_at_tau": 0.09,
+      "mean_first_crossing": 19.36,
+      "runs": 100,
+      "seed": 20260804
+    },
+    {
+      "alpha": 0.5,
+      "batch_size": 16,
+      "control": false,
+      "definition_tau_finite_mc": 7,
+      "eta": 0.5,
+      "failure_rate_at_horizon": 0.02,
+      "horizon": 1000,
+      "label": "alpha_sweep",
+      "max_tail_failure_at_tau": 0.06,
+      "mean_first_crossing": 4.21,
+      "runs": 100,
+      "seed": 20260805
+    },
+    {
+      "alpha": 0.2,
+      "batch_size": 1,
+      "control": false,
+      "definition_tau_finite_mc": 512,
+      "eta": 0.0125,
+      "failure_rate_at_horizon": 0.04,
+      "horizon": 1000,
+      "label": "batch_sweep",
+      "max_tail_failure_at_tau": 0.1,
+      "mean_first_crossing": 288.25,
+      "runs": 100,
+      "seed": 20260806
+    },
+    {
+      "alpha": 0.2,
+      "batch_size": 4,
+      "control": false,
+      "definition_tau_finite_mc": 144,
+      "eta": 0.05,
+      "failure_rate_at_horizon": 0.01,
+      "horizon": 1000,
+      "label": "batch_sweep",
+      "max_tail_failure_at_tau": 0.09,
+      "mean_first_crossing": 74.01,
+      "runs": 100,
+      "seed": 20260807
+    },
+    {
+      "alpha": 0.2,
+      "batch_size": 16,
+      "control": false,
+      "definition_tau_finite_mc": 40,
+      "eta": 0.2,
+      "failure_rate_at_horizon": 0.0,
+      "horizon": 1000,
+      "label": "batch_sweep",
+      "max_tail_failure_at_tau": 0.08,
+      "mean_first_crossing": 21.2,
+      "runs": 100,
+      "seed": 20260808
+    },
+    {
+      "alpha": 0.2,
+      "batch_size": 64,
+      "control": false,
+      "definition_tau_finite_mc": 10,
+      "eta": 0.8,
+      "failure_rate_at_horizon": 0.01,
+      "horizon": 1000,
+      "label": "batch_sweep",
+      "max_tail_failure_at_tau": 0.1,
+      "mean_first_crossing": 5.94,
+      "runs": 100,
+      "seed": 20260809
+    },
+    {
+      "alpha": 0.2,
+      "batch_size": 16,
+      "control": true,
+      "definition_tau_finite_mc": 1001,
+      "eta": 0.2,
+      "failure_rate_at_horizon": 1.0,
+      "horizon": 1000,
+      "label": "negative_alignment_control",
+      "max_tail_failure_at_tau": null,
+      "mean_first_crossing": 1001.0,
+      "runs": 100,
+      "seed": 20260810
+    }
+  ],
+  "scope": "A finite 1-D operational instance confirms the implemented recovery-complexity metric can distinguish aligned recovery from a negative-alignment control. It cannot verify the paper's general definition or TTA-learnability framework.",
+  "secondary_metric": "mean_first_crossing (source-table-like, not Definition 2.1)",
+  "verdict": "toy"
+}
