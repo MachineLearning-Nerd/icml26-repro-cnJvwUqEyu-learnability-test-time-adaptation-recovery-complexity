@@ -1,0 +1,25 @@
+{
+  "retrieved_at_utc": "2026-08-02T12:30:41Z",
+  "snapshot": "outputs/live/20260802T123041Z",
+  "openreview_id": "cnJvwUqEyu",
+  "title": "On the Learnability of Test-Time Adaptation: A Recovery Complexity Perspective",
+  "claim_count": 5,
+  "max_points": 10,
+  "claim_precedence": "claims_anchored.json overrides claims.json",
+  "source_urls": {
+    "index": "https://huggingface.co/datasets/ICML-2026-agent-repro/challenge/resolve/main/index.json",
+    "claims": "https://icml-2026-agent-repro-challenge.static.hf.space/claims.json",
+    "claims_anchored": "https://icml-2026-agent-repro-challenge.static.hf.space/claims_anchored.json",
+    "arxiv_source": "https://export.arxiv.org/e-print/2605.28057",
+    "arxiv_pdf": "https://arxiv.org/pdf/2605.28057"
+  },
+  "input_sha256": {
+    "metadata.json": "1c015a708cfd2e93ce4fb6020d670195c3af83121e74dfa0f5f0211a72136aff",
+    "live_claims.json": "73b8383a4f89cd62a41d5b4814a93208350f71c76da7c5ecd32110b8db6a7d70",
+    "challenge_readme.md": "027f66e6da758c4a0d75fff6c9298e5322dde64d21a97d33e4367e42c3a421c5"
+  },
+  "source_sha256": {
+    "arxiv_source.tar.gz": "5de5e1560373e0b27b97a6bba90a27c7ce715564cfd61eceed9fb85ea1ee4f28",
+    "paper.pdf": "790cdc9976f648834f0845f99a398d08e79b4591c9e39f1cb19da19141976f26"
+  }
+}

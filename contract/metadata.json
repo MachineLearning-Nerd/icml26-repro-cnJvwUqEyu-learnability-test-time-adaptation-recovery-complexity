@@ -1,0 +1,18 @@
+{
+  "openreview_id": "cnJvwUqEyu",
+  "submission_number": 9856,
+  "paper_id": "62832",
+  "title": "On the Learnability of Test-Time Adaptation: A Recovery Complexity Perspective",
+  "authors": [
+    "Zhi Zhou",
+    "Ming Yang",
+    "Shi-Yu Tian",
+    "Kun-Yang Yu",
+    "Lan-Zhe Guo",
+    "Yu-Feng Li"
+  ],
+  "area": "General Machine Learning",
+  "subarea": "Unsupervised And Semisupervised Learning",
+  "openreview": "https://openreview.net/forum?id=cnJvwUqEyu",
+  "arxiv": "2605.28057"
+}

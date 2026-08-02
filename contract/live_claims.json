@@ -1,0 +1,22 @@
+[
+  {
+    "text": "The paper defines (\u03b5,\u03b4)-recovery complexity to measure the time an algorithm needs to reach target accuracy after a distribution shift, and (\u03b5,\u03c1)-TTA learnability to quantify long-term reliability across a full non-stationary stream (Section 2).",
+    "status": "unverified"
+  },
+  {
+    "text": "Theorem 3.3 establishes a minimax lower bound showing recovery complexity scales as 1/\u03b1\u00b2 with alignment strength \u03b1, inversely with batch size B, and directly with a temporal correlation factor C_\u03c6 derived from \u03c6-mixing conditions (Theorem 3.3).",
+    "status": "unverified"
+  },
+  {
+    "text": "Theorem 3.9 shows a simple gradient-based test-time adaptation baseline achieves an upper bound of O((C_\u03c6/B)\u00b7log((\u0394_W+\u03b5)/\u03b5)/(\u03b1\u00b2\u03b5)), matching the lower bound up to logarithmic factors (Theorem 3.9).",
+    "status": "unverified"
+  },
+  {
+    "text": "Theorem 4.3 (Transfer Theorem) converts local recovery guarantees into global (\u03b5,\u03c1)-learnability results by relating shift count and per-shift recovery time to the overall violation rate (Theorem 4.3).",
+    "status": "unverified"
+  },
+  {
+    "text": "Synthetic experiments confirm the predicted scaling laws \u03c4 \u221d 1/\u03b1\u00b2 and \u03c4 \u221d 1/B, and real-world evaluations on CIFAR-10-C and ImageNet-C show the Tent method exhibits positive proxy-task alignment under moderate shift but negative alignment (and collapse) under strong temporal correlation (Section 5).",
+    "status": "unverified"
+  }
+]
