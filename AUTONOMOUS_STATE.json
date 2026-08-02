@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "openreview_id": "cnJvwUqEyu",
+  "phase": "claim_1_protocol_pending_direct_local_recovery_experiment",
+  "next_action": "launch_claim_1_direct_local_recovery_complexity_fixture",
+  "active_run_ids": [],
+  "completed_milestones": ["live_duplicate_gate", "live_contract_saved", "source_archive_and_pdf_pinned", "claim_1_source_cpu_feasibility_audit"],
+  "failed_attempts": [{"phase": "initial_test_environment", "outcome": "recoverable", "reason": "system Python lacked pytest; local project venv installed pytest and contract tests passed"}],
+  "claim_attempt_counts": {"1": 0, "2": 0, "3": 0, "4": 0, "5": 0},
+  "last_checkpoint": "2026-08-02T12:30:41Z",
+  "last_known_git_commit": "3ca16f46fc1fc1aa9d20030ab089efaaf542edb4",
+  "publication_allowed": false,
+  "compute_policy": "local CPU/local GPU only; no HF cpu-upgrade, Jobs, paid, or remote compute",
+  "github_repository": "https://github.com/MachineLearning-Nerd/icml26-repro-cnJvwUqEyu-learnability-test-time-adaptation-recovery-complexity",
+  "selection_rationale": "Anchored five-claim contract, public source archive/PDF, explicit controlled one-dimensional synthetic recovery experiment, and theorem-scaling claims support a clean-room local CPU first milestone. CIFAR/ImageNet and model-dependent claims are not presumed locally reproducible."
+}
